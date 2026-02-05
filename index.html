@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Pembelian Baju Jahit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pembelian Baju Jahit</h1>
+
+        <form id="orderForm">
+            <label>Nama Baju</label>
+            <input type="text" id="namaBaju" required>
+
+            <label>Jumlah</label>
+            <input type="number" id="jumlah" min="1" required>
+
+            <label>Harga per Baju</label>
+            <input type="number" id="harga" min="0" required>
+
+            <label>Jenis Bahan</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox" value="Katun"> Katun</label>
+                <label><input type="checkbox" value="Linen"> Linen</label>
+                <label><input type="checkbox" value="Satin"> Satin</label>
+                <label><input type="checkbox" value="Jersey"> Jersey</label>
+                <label><input type="checkbox" value="Rayon"> Rayon</label>
+            </div>
+
+            <button type="submit">Pesan</button>
+        </form>
+
+        <div id="hasil" class="hasil"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
